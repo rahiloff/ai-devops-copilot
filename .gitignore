@@ -1,23 +1,86 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-venv/
+# =========================
+# Environment & Secrets
+# =========================
 .env
-.env.example
-
-# Node
-node_modules/
-.next/
-
-# AWS & Secrets
+.env.*
+!.env.example
 *.pem
-.aws/
 *.key
+.aws/
+credentials.json
+client_secret.json
 
-# OS
+# =========================
+# Python / Backend
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+env.bak/
+venv.bak/
+
+# Testing / Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+
+# =========================
+# Node / Frontend (React & Vite)
+# =========================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# OS & IDEs
+# =========================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# VS Code
 .vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
